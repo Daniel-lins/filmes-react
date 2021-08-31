@@ -1,11 +1,16 @@
-
+import Header from './components/Header/Header';
 import './App.css';
+import SimpleBottomNavigation from "./components/MainNav";
 
 function App() {
   return (
+    <>
+    <Header />
     <div className="App">
-      <span>HELLO WORD</span>
-    </div>
+    aksdaskdk </div>
+    <SimpleBottomNavigation />
+   
+    </>
   );
 }
 
