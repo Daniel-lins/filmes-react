@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import MovieIcon from '@material-ui/icons/Movie';
 import WhatshotIcon from '@material-ui/icons/Whatshot';
+import SearchIcon from '@material-ui/icons/Search';
+import TvIcon from '@material-ui/icons/Tv';
+import { useHistory } from 'react-router';
 
 const useStyles = makeStyles({
   root: {
@@ -21,6 +22,15 @@ const useStyles = makeStyles({
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  const history = useHistory();
+
+    useEffect(() => {
+          if (value === 0) history.push("/");
+          else if (value === 1) history.push("/filmes");
+          else if (value === 2) history.push("/series");
+          else if (value === 3) history.push("/pesquisar");
+
+    }, [value, history]);
 
   return (
     <BottomNavigation
@@ -31,9 +41,21 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Recents" icon={<WhatshotIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+      <BottomNavigationAction
+       label="Recentes" 
+       icon={<WhatshotIcon />} />
+      
+      <BottomNavigationAction
+       label="Filmes" 
+       icon={<MovieIcon />} />
+
+      <BottomNavigationAction 
+      label="Series" 
+      icon={<TvIcon />} />
+
+      <BottomNavigationAction 
+      label="Pesquisar" 
+      icon={<SearchIcon />} />
     </BottomNavigation>
   );
 }
