@@ -6,6 +6,7 @@ import Recentes from './Pages/Recentes/Recentes';
 import Filmes from './Pages/Filmes/Filmes';
 import Series from './Pages/Series/Series';
 import Pesquisar from './Pages/Pesquisar/Pesquisar';
+
 function App() {
   return (
     <BrowserRouter>

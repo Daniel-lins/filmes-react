@@ -2,12 +2,15 @@ import axios from "axios";
 import {useState, useEffect} from 'react';
 import '../../components/SingleContent/SingleContent'
 import SingleContent from "../../components/SingleContent/SingleContent";
+import './Recentes.css';
+import CustomPagination from "../../components/Pagination/CustomPagination";
 
 
 function Recentes() {
+    const [page, setPage] = useState(1);
     const [content, setContent] = useState([]);
     const fetchTrending = async ()=> {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.REACT_APP_API_KEY}`
+        const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?language=pt-BR&api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
         
         );
 
@@ -18,7 +21,7 @@ function Recentes() {
 
     useEffect(() => {
         fetchTrending();
-    }, [])
+    }, [page])
     return (
         <div><span className='pageTitle'>Recentes</span>
 
@@ -39,6 +42,7 @@ function Recentes() {
 
         ))}
 </div>
+<CustomPagination setPage={setPage} />
         </div>
     )
 }
