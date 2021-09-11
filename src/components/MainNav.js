@@ -10,14 +10,15 @@ import { useHistory } from 'react-router';
 
 const useStyles = makeStyles({
   root: {
-    width: '100%',
-    position:'fixed',
-    bottom:0,
+    width: "100%",
+    position: "fixed",
+    bottom: 0,
     backgroundColor: "#2d313a",
-    zindex: 100,
-    
+    zIndex: 100,
   },
 });
+
+
 
 export default function SimpleBottomNavigation() {
   const classes = useStyles();

@@ -18,7 +18,7 @@
   
   .pageTitle {
     text-transform: uppercase;
-    display: flex;
+    display: flex;  
     justify-content: center;
     font-family: "Montserrat", sans-serif;
     font-size: 2vw;

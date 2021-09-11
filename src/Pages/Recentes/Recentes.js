@@ -21,6 +21,7 @@ function Recentes() {
 
     useEffect(() => {
         fetchTrending();
+        // eslint-disable-next-line
     }, [page])
     return (
         <div><span className='pageTitle'>Recentes</span>
