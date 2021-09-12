@@ -1,7 +1,19 @@
+import { TextField } from "@material-ui/core";
+import { useState } from "react";
+
 function Pesquisar() {
+
+    const [type, setType] = useState (0);
     return (
         <div>
-             <span className='pageTitle'>Pesquisar</span>
+            
+        <TextField
+        style={{ flex: 1}}
+        className="searchBox"
+        label="Search"
+        variant="filled"
+        // onChange={{e} => setSearchText(e.target.value)}
+        />
         </div>
     )
 }
