@@ -12,7 +12,8 @@ const SingleContent = ( {
     media_type,
     vote_average,
 }) => {
-    return   <ContentModal >
+    return ( 
+     <ContentModal media_type={media_type} id={id}>
           <Badge
         badgeContent={vote_average}
         color={vote_average > 6 ? "primary" : "secondary"}
@@ -24,7 +25,8 @@ const SingleContent = ( {
         <span className="subTitle">{date}</span>
         </span>
 
-    </ContentModal>
+    </ContentModal>);
 };
+    
 
 export default SingleContent
