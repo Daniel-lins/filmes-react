@@ -4,8 +4,11 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import axios from 'axios';
-import { img_500, unavailable } from '../../config/config';
+import { img_500, unavailable,   unavailableLandscape } from '../../config/config';
 import Carousel from "../Carousel/Carousel";
+import "./ContentModal.css";
+import { Button } from "@material-ui/core";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -68,9 +71,9 @@ export default function ContentModal({ children,  media_type, id }) {
 
   return (
     <div>
-      <button type="button" className="media" onClick={handleOpen}>
+      <div type="button" className="media" onClick={handleOpen}  style={ {cursor: "pointer"}}>
         {children}
-      </button>
+      </div>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -96,7 +99,7 @@ export default function ContentModal({ children,  media_type, id }) {
                   alt={content.name || content.title}
                   className="ContentModal__portrait"
                 />
-                {/* <img
+                <img
                   src={
                     content.backdrop_path
                       ? `${img_500}/${content.backdrop_path}`
@@ -104,7 +107,7 @@ export default function ContentModal({ children,  media_type, id }) {
                   }
                   alt={content.name || content.title}
                   className="ContentModal__landscape"
-                /> */}
+                />
                 <div className="ContentModal__about">
                   <span className="ContentModal__title">
                     {content.name || content.title} (
@@ -127,7 +130,7 @@ export default function ContentModal({ children,  media_type, id }) {
                     <Carousel id={id} media_type={media_type} />
                   </div>
 
-                  {/* <Button
+                  <Button
                     variant="contained"
                     startIcon={<YouTubeIcon />}
                     color="secondary"
@@ -135,7 +138,7 @@ export default function ContentModal({ children,  media_type, id }) {
                     href={`https://www.youtube.com/watch?v=${video}`}
                   >
                     Watch the Trailer
-                  </Button> */}
+                  </Button>
                 </div>
               </div>
             </div>
