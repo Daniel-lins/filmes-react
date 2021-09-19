@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function ContentModal({ children,  media_type, id }) {
+export default function TransitionsModal({ children,  media_type, id }) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [content, setContent] = useState();
@@ -118,6 +118,7 @@ export default function ContentModal({ children,  media_type, id }) {
                     ).substring(0, 4)}
                     )
                   </span>
+               
                   {content.tagline && (
                     <i className="tagline">{content.tagline}</i>
                   )}
@@ -137,7 +138,7 @@ export default function ContentModal({ children,  media_type, id }) {
                     target="__blank"
                     href={`https://www.youtube.com/watch?v=${video}`}
                   >
-                    Watch the Trailer
+                    Assista o trailer
                   </Button>
                 </div>
               </div>

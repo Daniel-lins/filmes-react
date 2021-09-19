@@ -5,6 +5,7 @@
   border-radius: 10px;
 }
 
+
 .ContentModal__portrait {
   display: none;
   object-fit: contain;
@@ -42,7 +43,7 @@
 }
 
 .ContentModal__title {
-  height: 12%;
+  height: auto;
   font-size: 5vw;
   display: flex;
   align-items: center;
