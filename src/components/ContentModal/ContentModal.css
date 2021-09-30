@@ -10,6 +10,7 @@
   display: none;
   object-fit: contain;
   border-radius: 10px;
+  
 }
 
 .tagline {
@@ -72,6 +73,7 @@
   .ContentModal__portrait {
     display: flex;
     width: 38%;
+    border-radius: 10px;
   }
   .ContentModal {
     flex-direction: row;

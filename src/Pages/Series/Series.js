@@ -25,6 +25,7 @@ function Series() {
            );
               setContent(data.results);
               setnumOfPages(data.total_pages);
+              console.log(data.results);
    
        };
    
