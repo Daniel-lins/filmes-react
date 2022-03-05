@@ -1,70 +1,70 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center"> Filmes React </h1>
+<p align="center">  🎬 Filmes React, 
+It is a project where a catalog of films was developed 
+<p> </p> 
+<p align="center" ><a  href="https://filmes-react.vercel.app/" > Application running | click here </a>  </p>
+<p align="center">
+   <a href="https://www.linkedin.com/in/daniel-lins-/">
+      <img alt="DanielLins" src="https://img.shields.io/badge/-DanielLi-5965e0?style=flat&logo=Linkedin&logoColor=white" />
+      <img alt="Issues" src="https://img.shields.io/github/issues/daniel-lins/filmes-react?color=%235965E0">
+  <a href="Dlins300@gmail.com">
+   <img alt="Email" src="https://img.shields.io/badge/-dlins300%40gmail.com-%23525DCB" />
+  </a>
+</p>
 
-## Available Scripts
+# 📌 Contents
 
-In the project directory, you can run:
+* [Screenshots](#camera-screenshot)
+* [Technologies](#rocket-technologies)
+* [How to Run](#computer-how-to-run)
+* [Issues](#bug-issues)
+* [License](#page_facing_up-license)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# :camera: Screenshots
+<div align="center">
+   <img src="https://user-images.githubusercontent.com/71731815/156897326-5876ad84-119d-4a73-b0a7-d4abe1b117fa.png"  width="500px" />
+   <img src="https://user-images.githubusercontent.com/71731815/156897344-e7e8edb6-d7db-4be6-9a6c-1f1554afe77d.png" width="500px" />
+  <img src="https://user-images.githubusercontent.com/71731815/156897358-b0b544b1-cff5-4847-9f00-32bf7fba4786.png" width="500px"  />
+  <img src="https://user-images.githubusercontent.com/71731815/156897368-b6d85a68-e2ea-4e2f-ba0c-487fa73d7fdb.png" width="500px"  />
+  <h2>Mobile </h2>
+  <img src="https://user-images.githubusercontent.com/71731815/156897388-697aafbe-7085-42f3-bee5-651baf8291e4.png" width="500px" />
+  <img src="https://user-images.githubusercontent.com/71731815/156897395-97049381-6e59-4d45-a309-2290f62b170d.png" width="300px" />
+  
+ 
+  
+</div>
 
-### `npm test`
+# :rocket: Technologies
+This project was made using the follow technologies:
+* [JavaScript](https://www.javascript.com/)      
+* [React](https://reactjs.org/)      
+* [Material UI](https://mui.com/pt/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# :computer: How to run
 
-### `npm run build`
+```bash
+# Clone Repository
+$ git clone https://github.com/Daniel-lins/filmes-react
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Install Dependencies
+$ npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Run Aplication
+$ npm start
+```
+Go to http://localhost:3000/ to see the result.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# :bug: Issues
 
-### `npm run eject`
+Create a <a href="https://github.com/daniel-lins/filmes-react/issues">new issue report</a>, it will be an honor to be able to help you solve and further improve our application.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# :page_facing_up: License
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project is under the [MIT license](./LICENSE).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you! 🌠
