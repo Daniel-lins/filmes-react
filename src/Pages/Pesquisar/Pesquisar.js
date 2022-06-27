@@ -44,6 +44,12 @@ function Pesquisar() {
   };
 
   useEffect(() => {
+    if (searchText.length > 3) {
+      fetchSearch();
+    }
+  }, [searchText]);
+
+  useEffect(() => {
     window.scroll(0, 0);
     fetchSearch();
     // eslint-disable-next-line

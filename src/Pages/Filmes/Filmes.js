@@ -5,6 +5,8 @@ import CustomPagination from "../../components/Pagination/CustomPagination";
 import Genres from "../../components/Genres/Genres";
 import useGenre from "../../hooks/useGenre";
 
+import "./Filmes.css";
+
 function Filmes() {
   const [genres, setGenres] = useState([]);
   const [selectedGenres, setSelectedGenres] = useState([]);
@@ -27,15 +29,16 @@ function Filmes() {
   return (
     <div>
       <span className="pageTitle">Filmes</span>
-
-      <Genres
-        type="movie"
-        selectedGenres={selectedGenres}
-        setSelectedGenres={setSelectedGenres}
-        genres={genres}
-        setGenres={setGenres}
-        setPage={setPage}
-      />
+      <div className="container">
+        <Genres
+          type="movie"
+          selectedGenres={selectedGenres}
+          setSelectedGenres={setSelectedGenres}
+          genres={genres}
+          setGenres={setGenres}
+          setPage={setPage}
+        />
+      </div>
       <div>
         <div className="trending">
           {content &&

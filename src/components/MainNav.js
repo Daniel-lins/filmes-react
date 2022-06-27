@@ -31,21 +31,39 @@ export default function SimpleBottomNavigation() {
   }, [value, history]);
 
   return (
-    <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={classes.root}
-    >
-      <BottomNavigationAction label="Recentes" icon={<WhatshotIcon />} />
+    <div className="container">
+      <BottomNavigation
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+        showLabels
+        className={classes.root}
+      >
+        <BottomNavigationAction
+          style={{ color: "white" }}
+          label="Recentes"
+          icon={<WhatshotIcon />}
+        />
 
-      <BottomNavigationAction label="Filmes" icon={<MovieIcon />} />
+        <BottomNavigationAction
+          style={{ color: "white" }}
+          label="Filmes"
+          icon={<MovieIcon />}
+        />
 
-      <BottomNavigationAction label="Series" icon={<TvIcon />} />
+        <BottomNavigationAction
+          style={{ color: "white" }}
+          label="Sries"
+          icon={<TvIcon />}
+        />
 
-      <BottomNavigationAction label="Pesquisar" icon={<SearchIcon />} />
-    </BottomNavigation>
+        <BottomNavigationAction
+          style={{ color: "white" }}
+          label="Pesquisar"
+          icon={<SearchIcon />}
+        />
+      </BottomNavigation>
+    </div>
   );
 }
