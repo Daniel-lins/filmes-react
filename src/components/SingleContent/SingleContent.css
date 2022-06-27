@@ -10,7 +10,7 @@
   background-color: #282c34;
   border-radius: 10px;
   position: relative;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .media:hover {
