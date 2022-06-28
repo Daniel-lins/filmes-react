@@ -5,13 +5,14 @@
 }
 
 .pageTitle {
-  margin-top: -10px;
-  margin-bottom: 5px;
+  margin-top: -5%;
+  margin-bottom: 2%;
   font-size: 1.5em;
 }
 
 @media (max-width: 700px) {
   .pageTitle {
-    margin-top: 20px;
+    margin-top: 1%;
+    font-size: 1em;
   }
 }
